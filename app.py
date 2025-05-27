@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 # Нотации от C4 до C5 включительно
 NOTE_NAMES = [
-    'C4', 'C#4', 'D4', 'D#4', 'E4', 'F4',
-    'F#4', 'G4', 'G#4', 'A4', 'A#4', 'B4', 'C5'
+    'C4', 'Csharp4', 'D4', 'Dsharp4', 'E4', 'F4', 
+    'Fsharp4', 'G4', 'Gsharp4', 'A4', 'Asharp4', 'B4', 'C5'
 ]
 
 @app.route('/')

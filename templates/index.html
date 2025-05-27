@@ -78,7 +78,7 @@
         async function loadPianoSamples() {
             const AudioContext = window.AudioContext || window.webkitAudioContext;
             audioContext = new AudioContext();
-            const noteNames = ['C4','C#4','D4','D#4','E4','F4','F#4','G4','G#4','A4','A#4','B4','C5'];
+            const noteNames = ['C4','Csharp4','D4','Dsharp4','E4','F4','Fsharp4','G4','Gsharp4','A4','Asharp4','B4','C5'];
             for (let note of noteNames) {
                 try {
                     const response = await fetch(`/static/samples/piano/${note}.wav`);
@@ -162,7 +162,7 @@
         // Автозагрузка при открытии
         window.addEventListener('load', async () => {
             await loadPianoSamples();
-            await fetchAndRenderChart();
+            // await fetchAndRenderChart("AAPL");
         });
 
         ['symbol', 'period', 'points'].forEach(id => {
