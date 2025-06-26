@@ -53,4 +53,4 @@ def get_data():
 
 if __name__ == '__main__':
     # Убедись, что index.html находится в папке templates/
-    app.run(debug=True)
+    app.run(port=4000, debug=True)
